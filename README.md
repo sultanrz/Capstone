@@ -1,6 +1,6 @@
 # MODEL Daegu Apartment
 
-### Capstone 3 Purwadhika by .....
+### Muhammad Sultan Reza
 
 # INTRO
 
