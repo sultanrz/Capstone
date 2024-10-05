@@ -38,9 +38,7 @@ Berikut adalah beberapa metrik evaluasi yang digunakan untuk menilai performa mo
 MAE mengukur rata-rata dari selisih absolut antara nilai aktual dan nilai prediksi. Semakin kecil nilai MAE, semakin baik model dalam memprediksi harga apartemen.
 
 **Rumus:**
-$$
-MAE = \frac{1}{n} \sum_{i=1}^{n} |y_i - \hat{y_i}|
-$$
+`MAE = (1/n) * Σ |y_i - ŷ_i|`
 
 - **Interpretasi:** Nilai MAE menunjukkan rata-rata kesalahan dalam satuan yang sama dengan harga apartemen. Kesalahan yang lebih kecil berarti prediksi model lebih akurat.
 
@@ -48,9 +46,7 @@ $$
 MSE adalah rata-rata dari selisih kuadrat antara nilai aktual dan nilai prediksi. MSE lebih sensitif terhadap outliers, sehingga kesalahan besar akan lebih ditekankan.
 
 **Rumus:**
-$$
-MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y_i})^2
-$$
+`MSE = (1/n) * Σ (y_i - ŷ_i)^2`
 
 - **Interpretasi:** Semakin kecil MSE, semakin baik performa model. MSE menghukum kesalahan yang lebih besar dengan lebih keras, sehingga cocok untuk kasus dengan variasi harga yang besar.
 
@@ -58,9 +54,7 @@ $$
 RMSE adalah akar dari MSE, yang juga sensitif terhadap outliers tetapi lebih mudah dipahami karena mengembalikan nilai kesalahan ke skala yang sama dengan target harga apartemen.
 
 **Rumus:**
-$$
-RMSE = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y_i})^2}
-$$
+`RMSE = sqrt((1/n) * Σ (y_i - ŷ_i)^2)`
 
 - **Interpretasi:** Semakin kecil nilai RMSE, semakin akurat prediksi harga apartemen. Ini memberikan gambaran yang jelas tentang seberapa jauh prediksi berbeda dari harga aktual.
 
@@ -68,9 +62,7 @@ $$
 R-squared menunjukkan proporsi variasi dalam target (harga apartemen) yang bisa dijelaskan oleh fitur-fitur yang digunakan oleh model. Nilainya berkisar antara 0 dan 1.
 
 **Rumus:**
-$$
-R^2 = 1 - \frac{\sum_{i=1}^{n} (y_i - \hat{y_i})^2}{\sum_{i=1}^{n} (y_i - \bar{y})^2}
-$$
+`R² = 1 - (Σ (y_i - ŷ_i)^2 / Σ (y_i - ȳ)^2)`
 
 - **Interpretasi:** R² mendekati 1 menunjukkan bahwa model mampu menjelaskan sebagian besar variasi dalam harga apartemen. Nilai yang lebih rendah mengindikasikan bahwa ada fitur yang belum dimasukkan atau model belum optimal.
 
@@ -81,6 +73,7 @@ $$
 - **R-squared** memberikan gambaran umum tentang seberapa baik model dalam menjelaskan variasi harga berdasarkan fitur yang ada.
 
 Dengan menggunakan metrik-metrik ini, kita dapat mengevaluasi performa model secara menyeluruh dan memberikan rekomendasi berdasarkan hasil evaluasi.
+
 
 
 # Strategi dalam Konteks Bisnis
