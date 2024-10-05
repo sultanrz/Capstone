@@ -32,49 +32,49 @@ Untuk kasus prediksi harga apartemen, metrik evaluasi akan sedikit berbeda diban
 
 # Metric Evaluation
 
-Pada kasus prediksi harga apartemen, berikut adalah beberapa metrik evaluasi yang digunakan untuk menilai performa model regresi:
+Berikut adalah beberapa metrik evaluasi yang digunakan untuk menilai performa model regresi:
 
-1. **Mean Absolute Error (MAE):**  
-   MAE mengukur rata-rata dari selisih absolut antara nilai aktual dan nilai prediksi. Semakin kecil nilai MAE, semakin baik model dalam memprediksi harga apartemen.
+## 1. Mean Absolute Error (MAE)
+MAE mengukur rata-rata dari selisih absolut antara nilai aktual dan nilai prediksi. Semakin kecil nilai MAE, semakin baik model dalam memprediksi harga apartemen.
 
-   **Rumus:**
-   $$
-   MAE = \frac{1}{n} \sum_{i=1}^{n} |y_i - \hat{y_i}|
-   $$
+**Rumus:**
+$$
+MAE = \frac{1}{n} \sum_{i=1}^{n} |y_i - \hat{y_i}|
+$$
 
-   - **Interpretasi:** Nilai MAE menunjukkan rata-rata kesalahan dalam satuan yang sama dengan harga apartemen. Kesalahan yang lebih kecil berarti prediksi model lebih akurat.
+- **Interpretasi:** Nilai MAE menunjukkan rata-rata kesalahan dalam satuan yang sama dengan harga apartemen. Kesalahan yang lebih kecil berarti prediksi model lebih akurat.
 
-2. **Mean Squared Error (MSE):**  
-   MSE adalah rata-rata dari selisih kuadrat antara nilai aktual dan nilai prediksi. MSE lebih sensitif terhadap outliers, sehingga kesalahan besar akan lebih ditekankan.
+## 2. Mean Squared Error (MSE)
+MSE adalah rata-rata dari selisih kuadrat antara nilai aktual dan nilai prediksi. MSE lebih sensitif terhadap outliers, sehingga kesalahan besar akan lebih ditekankan.
 
-   **Rumus:**
-   $$
-   MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y_i})^2
-   $$
+**Rumus:**
+$$
+MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y_i})^2
+$$
 
-   - **Interpretasi:** Semakin kecil MSE, semakin baik performa model. MSE menghukum kesalahan yang lebih besar dengan lebih keras, sehingga cocok untuk kasus dengan variasi harga yang besar.
+- **Interpretasi:** Semakin kecil MSE, semakin baik performa model. MSE menghukum kesalahan yang lebih besar dengan lebih keras, sehingga cocok untuk kasus dengan variasi harga yang besar.
 
-3. **Root Mean Squared Error (RMSE):**  
-   RMSE adalah akar dari MSE, yang juga sensitif terhadap outliers tetapi lebih mudah dipahami karena mengembalikan nilai kesalahan ke skala yang sama dengan target harga apartemen.
+## 3. Root Mean Squared Error (RMSE)
+RMSE adalah akar dari MSE, yang juga sensitif terhadap outliers tetapi lebih mudah dipahami karena mengembalikan nilai kesalahan ke skala yang sama dengan target harga apartemen.
 
-   **Rumus:**
-   $$
-   RMSE = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y_i})^2}
-   $$
+**Rumus:**
+$$
+RMSE = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y_i})^2}
+$$
 
-   - **Interpretasi:** Semakin kecil nilai RMSE, semakin akurat prediksi harga apartemen. Ini memberikan gambaran yang jelas tentang seberapa jauh prediksi berbeda dari harga aktual.
+- **Interpretasi:** Semakin kecil nilai RMSE, semakin akurat prediksi harga apartemen. Ini memberikan gambaran yang jelas tentang seberapa jauh prediksi berbeda dari harga aktual.
 
-4. **R-squared (R²):**  
-   R-squared menunjukkan proporsi variasi dalam target (harga apartemen) yang bisa dijelaskan oleh fitur-fitur yang digunakan oleh model. Nilainya berkisar antara 0 dan 1.
+## 4. R-squared (R²)
+R-squared menunjukkan proporsi variasi dalam target (harga apartemen) yang bisa dijelaskan oleh fitur-fitur yang digunakan oleh model. Nilainya berkisar antara 0 dan 1.
 
-   **Rumus:**
-   $$
-   R^2 = 1 - \frac{\sum_{i=1}^{n} (y_i - \hat{y_i})^2}{\sum_{i=1}^{n} (y_i - \bar{y})^2}
-   $$
+**Rumus:**
+$$
+R^2 = 1 - \frac{\sum_{i=1}^{n} (y_i - \hat{y_i})^2}{\sum_{i=1}^{n} (y_i - \bar{y})^2}
+$$
 
-   - **Interpretasi:** R² mendekati 1 menunjukkan bahwa model mampu menjelaskan sebagian besar variasi dalam harga apartemen. Nilai yang lebih rendah mengindikasikan bahwa ada fitur yang belum dimasukkan atau model belum optimal.
+- **Interpretasi:** R² mendekati 1 menunjukkan bahwa model mampu menjelaskan sebagian besar variasi dalam harga apartemen. Nilai yang lebih rendah mengindikasikan bahwa ada fitur yang belum dimasukkan atau model belum optimal.
 
-### Kesimpulan Metrik
+## Kesimpulan Metrik
 
 - **MAE** memberikan pemahaman tentang seberapa besar kesalahan rata-rata yang dihasilkan model dalam prediksi harga apartemen.
 - **MSE** dan **RMSE** lebih cocok untuk kasus dengan variasi harga yang besar dan memperhatikan outliers.
